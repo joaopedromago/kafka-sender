@@ -9,20 +9,8 @@ Project made to receive HTTP Requests and send kafka message, usefull to test ka
 To run the project in development mode, you only need to execute the following command:
 
 ```
+yarn
 yarn start:dev
-```
-
-To run the project in production mode using PM2, you only need to execute the following command:
-
-```
-yarn start:prod
-```
-
-The following commands should be used to **stop** and **restart** the project execution in production mode:
-
-```
-yarn stop:prod
-yarn restart:prod
 ```
 
 ## Instructions for using the project
