@@ -8,10 +8,10 @@ const dotEnvSchema = Yup.object().shape({
   PORT: Yup.number(),
   KAFKA_URL: Yup.string().required(),
   KAFKA_CLIENT_ID: Yup.string().required(),
-  KAFKA_API_KEY: Yup.string().required(),
-  KAFKA_SECRET: Yup.string().required(),
-  KAFKA_PROTOCOL: Yup.string().required(),
-  KAFKA_MECHANISMS: Yup.string().required(),
+  KAFKA_API_KEY: Yup.string(),
+  KAFKA_SECRET: Yup.string(),
+  KAFKA_PROTOCOL: Yup.string(),
+  KAFKA_MECHANISMS: Yup.string(),
 });
 
 /**
