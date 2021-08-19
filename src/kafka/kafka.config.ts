@@ -9,8 +9,8 @@ export const KafkaOptions: ClientProviderOptions = {
     client: {
       clientId: serviceConfig.kafkaClientId,
       brokers: [serviceConfig.kafkaUrl],
-      ssl: true,
-      sasl: {
+      ssl: process.env.NODE_ENV === 'production',
+      sasl: process.env.NODE_ENV === 'production' && {
         username: serviceConfig.kafkaApiKey,
         password: serviceConfig.kafkaSecret,
         mechanism: serviceConfig.kafkaMechanisms as any,
